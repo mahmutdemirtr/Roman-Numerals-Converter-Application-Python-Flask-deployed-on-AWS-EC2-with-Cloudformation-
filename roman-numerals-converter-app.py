@@ -19,7 +19,7 @@ def main_post():
         number = int(alpha)
         if not 0 < number < 4000:
             return render_template('index.html', developer_name='mahmut demir', not_valid=True)
-        return render_template('result.html', number_decimal = number , number_roman= convert(number), developer_name='osvaldo')
+        return render_template('result.html', number_decimal = number , number_roman= convert(number), developer_name='mahmut demir')
     else:
         return render_template('index.html', developer_name='mahmut demir', not_valid=False)
 
